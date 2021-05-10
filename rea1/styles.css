@@ -79,7 +79,7 @@ nav .icon {
   }
   
   /*responsive header*/
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 600px) {
     header {
         grid-template-columns: 1fr 4fr 1fr;
         grid-template-rows: 1fr;
@@ -106,7 +106,7 @@ nav .icon {
     }
   }
     /* responsive nav open*/
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 600px) {
     header div img{
         width: 15vw;
     }
@@ -155,7 +155,7 @@ footer p {
 
 /*footer responsive*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   footer a:visited, footer a:link {
     font-size: 3vw;
   }
@@ -187,24 +187,40 @@ article {
   border: solid 2px #004e89;
   border-radius: 10px;
 }
-article h4 {
+article div {
   font-size: 27px;
   padding: 10px;
   border-bottom: dotted 2px #004e89;
+  color: #004e89;
+  display: flex;
+  margin-bottom: 10px;
+}
+article div img {
+  position: relative;
+  left: 17vw;
+  bottom: 5vh;
+}
+article div h4 {
+  display: flex;
+  align-items: center;
 }
 article p {
   font-size: 1.2em;
-  padding: 8px;
+  padding: 10px;
+  color: #004e89;
 }
 
 /*section responsive*/
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 600px) {
     section {
       margin-top: 17vw;
     }
     h3 {
       margin-left: 30vw;
       margin-right: 30vw;
+    }
+    article div img {
+      display: none;
     }
   }
 
