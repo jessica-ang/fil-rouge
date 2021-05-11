@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div><img src="images/AssisTales.png" alt="C'est le logo d'Assis'Tales"></div>
+        <h1>Assis'Tales</h1>
+        <nav class="mainNav" id="myMainNav">
+                <a href="./index.html" >Accueil</a>
+                <a href="./fiches.html" >Fiches</a>
+                <a href="./forum.html">Communité</a>
+                <a href="./compte.html" class="active">Compte</a>
+            <div>
+                <a href="javascript:void(0);" class="icon" onclick="menuResponsive()">
+                    <img src="images/menuBurger.png" alt="icon menu burger">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <h3>Compte</h3>
+        <img src="images/punaise.png" alt="icone de la punaise d'article" class="punaiseForm">
+        <form action="programme.php" method="POST" class="formConnexion">
+            <fieldset>
+                <legend>Connexion</legend>
+                <div>
+                    <label for="login">Identifiant : </label>
+                    <input type="text" id="login" name="login" required>
+                </div>
+                <div>
+                    <label for="password">Mot de passe : </label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Se souvenir de moi</label>
+                </div>
+                <div>
+                    <input type="submit" value="Connexion" id="connexion">
+                </div>
+                <div>
+                    <a href="#">Mot de passe oublié ?</a>
+                </div>
+                <div>
+                    <p>Pas encore inscrit ? <a href="#">Inscription</a></p>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <p>Assis'Tales</p>
+        <a href="./mentionsLegale.html">Mentions Légales</a>
+        <a href="./contact.html">Nous contacter</a>
+
+    </footer>
+</body>
+</html>
