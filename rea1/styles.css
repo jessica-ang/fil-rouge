@@ -174,12 +174,13 @@ footer p {
 
 section{
   margin-top: 120px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 h3{
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
   color: #004e89;
   font-weight: bold;
@@ -334,7 +335,26 @@ input[type="submit"] {
   }
 
 
+/*Formulaire contact */
 
+.formContact {
+  background-color: #ffffca;
+  border: solid 2px #004e89;
+  border-radius: 10px;
+  width: 250px;
+  height: 350px;
+  padding: 20px;
+  margin: 30px;
+  margin-top: 0;
+}
+.formContact fieldset div label span {
+  color: orangered;
+}
+.formContact fieldset div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 

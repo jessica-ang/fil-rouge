@@ -13,9 +13,9 @@
         <div><img src="images/AssisTales.png" alt="C'est le logo d'Assis'Tales"></div>
         <h1>Assis'Tales</h1>
         <nav class="mainNav" id="myMainNav">
-                <a href="./index.html" >Accueil</a>
+                <a href="./index.html" class="active">Accueil</a>
                 <a href="./fiches.html">Fiches</a>
-                <a href="./forum.html" class="active">Communité</a>
+                <a href="./forum.html">Communité</a>
                 <a href="./compte.html">Compte</a>
             <div>
                 <a href="javascript:void(0);" class="icon" onclick="menuResponsive()">
@@ -25,13 +25,30 @@
         </nav>
     </header>
     <section>
-        <h3>Communauté</h3>
-        <p>Page en construction...</p>
+        <h3>Création Personnage</h3>
+        <img src="images/punaise.png" alt="icone de la punaise d'article" class="punaiseForm">
+        <form action="programme.php" method="POST" class="formCrea">
+            <fieldset>
+                <legend>Création</legend>
+                <div>
+                    <label for="name">Nom <span>*</span>: </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="firstname">Prénom <span>*</span> : </label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div>
+                    <input type="save" value="Enregistrer" id="save">
+                </div>
+            </fieldset>
+        </form>
     </section>
     <footer>
         <p>Assis'Tales</p>
         <a href="./mentionsLegales.html">Mentions Légales</a>
         <a href="./contact.html">Nous contacter</a>
+
     </footer>
 </body>
 </html>

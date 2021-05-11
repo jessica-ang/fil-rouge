@@ -14,9 +14,9 @@
         <h1>Assis'Tales</h1>
         <nav class="mainNav" id="myMainNav">
                 <a href="./index.html" >Accueil</a>
-                <a href="./fiches.html" >Fiches</a>
-                <a href="./forum.html">Communité</a>
-                <a href="./compte.html" class="active">Compte</a>
+                <a href="./fiches.html">Fiches</a>
+                <a href="./forum.html" >Communité</a>
+                <a href="./compte.html">Compte</a>
             <div>
                 <a href="javascript:void(0);" class="icon" onclick="menuResponsive()">
                     <img src="images/menuBurger.png" alt="icon menu burger">
@@ -25,31 +25,28 @@
         </nav>
     </header>
     <section>
-        <h3>Compte</h3>
         <img src="images/punaise.png" alt="icone de la punaise d'article" class="punaiseForm">
-        <form action="programme.php" method="POST" class="formConnexion">
+        <form action="programme.php" method="POST" class="formContact">
             <fieldset>
-                <legend>Connexion</legend>
+                <legend>Nous contacter</legend>
                 <div>
-                    <label for="login">Identifiant : </label>
-                    <input type="text" id="login" name="login" required>
+                    <label for="name">Nom <span>*</span>: </label>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div>
-                    <label for="password">Mot de passe : </label>
-                    <input type="password" id="password" name="password" required>
+                    <label for="firstname">Prénom <span>*</span> : </label>
+                    <input type="text" id="firstname" name="firstname" required>
                 </div>
                 <div>
-                    <input type="checkbox" id="remember" name="remember">
-                    <label for="remember">Se souvenir de moi</label>
+                    <label for="email">Email <span>*</span> : </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message <span>*</span> :</label>
+                    <textarea id="message" name="message" rows="6" cols="30"></textarea>
                 </div>
                 <div>
                     <input type="submit" value="Connexion" id="connexion">
-                </div>
-                <div>
-                    <a href="#">Mot de passe oublié ?</a>
-                </div>
-                <div>
-                    <p>Pas encore inscrit ? <a href="#">Inscription</a></p>
                 </div>
             </fieldset>
         </form>
