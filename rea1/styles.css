@@ -17,8 +17,11 @@ header {
     position: fixed;
     display: grid;
     width: 100%;
-    grid-template-columns: 125px 4fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.4fr 4fr;
+    grid-template-rows: 0.5fr 0.8fr;
+    border-bottom: #004e89 solid 2px;
+    box-shadow: #004e89 0px 2px 2px;
+    padding-bottom: 5px;
 }
 header div {
     grid-column: 1;
@@ -31,8 +34,8 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 5px;
 }
 header .mainNav {
     grid-column: 2;
@@ -60,10 +63,10 @@ header .mainNav {
     display: flex;
     color: #004e89;
     text-align: center;
-    padding: 10px 10px;
-    margin: 10px;
+    padding: 5px 5px;
+    margin: 5px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
     border: solid 2px #004e89;
     box-shadow: 2px 2px 2px;
     border-radius: 5px;
@@ -79,7 +82,7 @@ header .mainNav {
   }
   
   /*responsive header*/
-  @media screen and (max-width: 600px) {
+  @media (max-width: 800px) {
     header {
         grid-template-columns: 1fr 4fr 1fr;
         grid-template-rows: 1fr;
@@ -107,7 +110,7 @@ header .mainNav {
     }
   }
     /* responsive nav open*/
-  @media screen and (max-width: 600px) {
+  @media (max-width: 800px) {
     header div img{
         width: 15vw;
     }
@@ -142,6 +145,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border-top: #004e89 solid 2px;
 }
 footer a:visited, footer a:link {
   color: #004e89;
@@ -156,7 +160,7 @@ footer p {
 
 /*footer responsive*/
 
-@media screen and (max-width: 600px) {
+@media (max-width: 800px) {
   footer a:visited, footer a:link {
     font-size: 3vw;
   }
@@ -169,7 +173,7 @@ footer p {
 /* section*/
 
 section{
-  margin-top: 140px;
+  margin-top: 120px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -199,7 +203,7 @@ article div {
   display: flex;
   margin-bottom: 10px;
 }
-article div img {
+.punaise {
   position: relative;
   left: 17vw;
   bottom: 5vh;
@@ -215,11 +219,11 @@ article p {
 }
 
 /*section responsive*/
-  @media screen and (max-width: 600px) {
+  @media (max-width: 800px) {
     section {
-      margin-top: 17vw;
+      margin-top: 20vw;
     }
-    article div img {
+    .punaise {
       display: none;
     }
   }
@@ -271,6 +275,64 @@ input[type="submit"] {
   position: relative;
   top: 22px;
 }
+
+/* accueil fiche*/
+.navBar {
+  align-self: flex-start;
+  position: fixed;
+}
+
+.nav2 ul li {
+  list-style: none;
+  font-size: 20px;
+  border: #004e89 solid 2px;
+  background-color: #ffffca;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: #004e89 2px 2px 2px;
+}
+
+.nav2 ul li a {
+  display: flex;
+  align-items: center;
+}
+.nav2 ul li a span {
+  padding-left: 15px;
+}
+
+.nav2 ul a:link, .nav2 ul a:visited {
+  text-decoration: none;
+  color: #004e89;
+} 
+.nav2 ul li:hover {
+    background-color: #ddd;
+}
+.nav2 ul li:hover a span {
+  color: black;
+}
+
+.iconCrea {
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+}
+
+
+
+  /*nav2 responsive*/
+
+
+  @media (max-width: 800px) {
+    .nav2 ul li a span {
+      display: none;
+    }
+    .nav2 ul li a img {
+      width: 50px;
+      color: #004e89
+    };
+  }
+
 
 
 

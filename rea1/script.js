@@ -1,8 +1,8 @@
 function menuResponsive() {
-    let x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+    let x = document.getElementById("myMainNav");
+    if (x.className === "mainNav") {
       x.className += " responsive";
     } else {
-      x.className = "topnav";
+      x.className = "mainNav";
     }
   }
