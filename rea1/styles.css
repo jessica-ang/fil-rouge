@@ -34,19 +34,19 @@ header h1 {
     font-size: 50px;
     margin-bottom: 10px;
 }
-header nav {
+header .mainNav {
     grid-column: 2;
     grid-row: 2;
 }
 
-nav a.active , nav a.active:hover{
+.mainNav a.active , .mainNav a.active:hover{
   background-color: #004e89;
   color: #ffe3c2;
 
 }
 
 
-nav {
+.mainNav {
     overflow: hidden;
     background-color: #ffe3c2;
     border: #ffe3c2;
@@ -55,7 +55,7 @@ nav {
     flex-wrap: wrap;
   }
   
-nav a {
+.mainNav a {
     float: left;
     display: flex;
     color: #004e89;
@@ -69,12 +69,12 @@ nav a {
     border-radius: 5px;
   }
   
-nav a:hover {
+.mainNav a:hover {
     background-color: #ddd;
     color: black;
   }
   
-nav .icon {
+.mainNav .icon {
     display: none;
   }
   
@@ -84,13 +84,13 @@ nav .icon {
         grid-template-columns: 1fr 4fr 1fr;
         grid-template-rows: 1fr;
     }
-    header nav {
+    header .mainNav {
         grid-column: 2 /span 2;
         grid-row: 1;
         display: flex;
         align-items: center;
     }
-    nav div {
+    .mainNav div {
       position: absolute;
       right: 0;
       display: flex;
@@ -98,11 +98,12 @@ nav .icon {
       align-items: center;
     }
     header h1 {display: none;}
-    nav {display: block;}
-    nav a {display: none;}
-    nav a.icon {
+    .mainNav {display: block;}
+    .mainNav a {display: none;}
+    .mainNav a.icon {
       float: right;
       display: block;
+      padding: 0;
     }
   }
     /* responsive nav open*/
@@ -110,14 +111,14 @@ nav .icon {
     header div img{
         width: 15vw;
     }
-    nav.responsive {
+    .mainNav.responsive {
         position: relative;
         justify-content: flex-start;
     }
     a.icon img{
         width: 9vw;
     }
-    nav.responsive a {
+    .mainNav.responsive a {
       float: none;
       display: block;
       margin: 0;
@@ -169,6 +170,9 @@ footer p {
 
 section{
   margin-top: 140px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 h3{
   font-size: 35px;
@@ -178,8 +182,8 @@ h3{
   background-color: #ffffca;
   border: #004e89 solid 2px;
   border-radius: 10px;
-  margin-right: 40vw;
-  margin-left: 40vw;
+  width: 250px;
+  height: 50px;
 }
 article {
   margin: 5vw;
@@ -215,17 +219,58 @@ article p {
     section {
       margin-top: 17vw;
     }
-    h3 {
-      margin-left: 30vw;
-      margin-right: 30vw;
-    }
     article div img {
       display: none;
     }
   }
 
 
-
+/* Formulaire connexion*/
+.formConnexion {
+  background-color: #ffffca;
+  border: solid 2px #004e89;
+  border-radius: 10px;
+  width: 250px;
+  height: 275px;
+  text-align: center;
+  padding: 20px;
+  margin: 50px;
+  margin-top: 0;
+}
+fieldset div {
+  padding: 5px;
+}
+fieldset {
+  color: #004e89;
+  border: #004e89 dotted 2px;
+  padding: 3px;
+  font-size: 19px;
+}
+legend {
+  font-size: 20px;
+}
+fieldset div a:link, fieldset div a:visited {
+  color: orangered;
+  text-decoration: none;
+  font-size: 13px;
+}
+fieldset  div p {
+  font-size: 13px;
+}
+input[type="submit"] {
+  border: black solid 2px;
+  border-radius: 5px;
+  box-shadow: grey 2px 2px 2px;
+  background-color: #004e89;
+  color: #ffffca;
+  width: 75px;
+  height: 25px;
+}
+.punaiseForm {
+  width: 75px;
+  position: relative;
+  top: 22px;
+}
 
 
 
