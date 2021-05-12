@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cr&tion projet</title>
+    <title>Création projet</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
@@ -25,15 +25,20 @@
         </nav>
     </header>
     <section>
-        <h3>Création Personnage</h3>
+        <h3>Création Projet</h3>
         <img src="images/punaise.png" alt="icone de la punaise d'article" class="punaiseForm">
         <form action="programme.php" method="POST" class="formCrea">
             <fieldset>
                 <legend>Création</legend>
                 <div>
-                    <label for="name">Nom <span>*</span>: </label>
+                    <label for="name">Titre <span>*</span>: </label>
                     <input type="text" id="name" name="name" required>
                 </div>
+                <div>
+                    <label for="genre">Thème :</label>
+                    <input type="text" name="genre" id="genre">
+                </div>
+                
                 <div>
                     <input type="submit" value="Enregistrer" id="save">
                 </div>
