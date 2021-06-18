@@ -1,3 +1,4 @@
+
 function menuResponsive() {
     let x = document.getElementById("myMainNav");
     if (x.className === "mainNav") {

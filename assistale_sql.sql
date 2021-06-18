@@ -234,8 +234,8 @@ use assistales;
 insert into univers (nom) value 
 ("idées");
 
-insert into univers (nom) value 
-();
+insert into flores (nom) value 
+("");
 
 insert into personnages (nom, prenom) value 
 ();

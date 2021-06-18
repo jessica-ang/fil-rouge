@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(images/liege.png);
+    background-color: #8C271E;
     display: flex;
     flex-direction: column;
 }
@@ -13,7 +13,7 @@ body {
 /* Header*/
 
 header {
-    background-color: #ffe3c2;
+    background-color: #FDF5BF;
     position: fixed;
     display: grid;
     width: 100%;
@@ -49,10 +49,9 @@ header .mainNav {
 
 }
 
-
 .mainNav {
     overflow: hidden;
-    background-color: #ffe3c2;
+    background-color: #FDF5BF;
     border: #ffe3c2;
     display: flex;
     justify-content: space-around;
@@ -137,7 +136,7 @@ header .mainNav {
   /* footer*/
 
 footer {
-  background-color: #ffe3c2;
+  background-color: #FDF5BF;
   width: 100vw;
   height: 50px;
   position: fixed;
@@ -279,64 +278,6 @@ input[type="submit"] {
   z-index: 10;
 }
 
-/* accueil fiche*/
-.navBar {
-  align-self: flex-start;
-  position: fixed;
-}
-
-.nav2 ul li {
-  list-style: none;
-  font-size: 20px;
-  border: #004e89 solid 2px;
-  background-color: #ffffca;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
-  box-shadow: #004e89 2px 2px 2px;
-}
-
-.nav2 ul li a {
-  display: flex;
-  align-items: center;
-}
-.nav2 ul li a span {
-  padding-left: 15px;
-}
-
-.nav2 ul a:link, .nav2 ul a:visited {
-  text-decoration: none;
-  color: #004e89;
-} 
-.nav2 ul li:hover {
-    background-color: #ddd;
-}
-.nav2 ul li:hover a span {
-  color: black;
-}
-
-.iconCrea {
-  position: absolute;
-  bottom: 60px;
-  right: 20px;
-}
-
-
-
-  /*nav2 responsive*/
-
-
-  @media (max-width: 800px) {
-    .nav2 ul li a span {
-      display: none;
-    }
-    .nav2 ul li a img {
-      width: 50px;
-      color: #004e89
-    };
-  }
-
-
 /*Formulaire contact */
 
 .formContact {
@@ -358,30 +299,6 @@ input[type="submit"] {
     align-items: center;
 }
 
-
-/* formulaire création*/
-
-.formCrea {
-  background-color: #ffffca;
-  border: solid 2px #004e89;
-  border-radius: 10px;
-  width: 500px;
-  height: 500px;
-  padding: 20px;
-  margin: 30px;
-  margin-top: 0;
-}
-
-.save {
-  position: fixed;
-  bottom: 60px;
-  right: 100px;;
-}
-.return {
-  position: fixed;
-  bottom: 60px;
-  right: 20px;
-}
 
 
 
