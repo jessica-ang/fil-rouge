@@ -1,18 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="bottom|right"
+        android:padding="6dp"
+        android:text="Assis'Tales" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDF5BF"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bt_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:backgroundTint="#FDF5BF"
+            android:onClick="onBtHomeClick"
+            app:srcCompat="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/bt_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:backgroundTint="#FDF5BF"
+            android:onClick="onBtProjectClick"
+            app:srcCompat="@drawable/ic_project" />
+
+        <ImageButton
+            android:id="@+id/bt_univers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:backgroundTint="#FDF5BF"
+            android:onClick="onBtUniversClick"
+            app:srcCompat="@drawable/ic_univers" />
+
+        <ImageButton
+            android:id="@+id/bt_character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FDF5BF"
+            android:onClick="onBtCharacterClick"
+            app:srcCompat="@drawable/ic_character" />
+
+        <ImageButton
+            android:id="@+id/bt_deities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FDF5BF"
+            android:onClick="onBtDeitiesClick"
+            app:srcCompat="@drawable/ic_deities" />
+
+        <ImageButton
+            android:id="@+id/bt_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FDF5BF"
+            android:onClick="onBtPlaceClick"
+            app:srcCompat="@drawable/ic_place" />
+
+        <ImageButton
+            android:id="@+id/bt_fauna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FDF5BF"
+            android:onClick="onBtFaunaClick"
+            app:srcCompat="@drawable/ic_fauna" />
+
+        <ImageButton
+            android:id="@+id/bt_flora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FDF5BF"
+            android:onClick="onBtFloraClick"
+            app:srcCompat="@drawable/ic_flora" />
+
+        <ImageButton
+            android:id="@+id/bt_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FDF5BF"
+            android:onClick="onBtItemClick"
+            app:srcCompat="@drawable/ic_item" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Error"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
