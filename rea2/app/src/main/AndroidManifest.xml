@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assistales">
         <activity
-            android:name="com.jang.assistales.MainActivity"
+            android:name=".SheetShowActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FloraActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

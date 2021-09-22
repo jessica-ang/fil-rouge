@@ -3,8 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/irisj/OneDrive/Documents/Java_android/projet fil rouge/assistales_git/rea2/app/src/main/res/layout/activity_flora.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/irisj/OneDrive/Documents/Java_android/projet fil rouge/assistales_git/rea2/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/irisj/OneDrive/Documents/Java_android/projet fil rouge/assistales_git/rea2/app/src/main/res/layout/activity_sheet_show.xml" value="0.1859375" />
+        <entry key="..\:/Users/irisj/OneDrive/Documents/Java_android/projet fil rouge/assistales_git/rea2/app/src/main/res/layout/fragment_ability_flora.xml" value="0.2" />
+        <entry key="..\:/Users/irisj/OneDrive/Documents/Java_android/projet fil rouge/assistales_git/rea2/app/src/main/res/layout/fragment_flora.xml" value="0.2" />
+        <entry key="..\:/Users/irisj/OneDrive/Documents/Java_android/projet fil rouge/assistales_git/rea2/app/src/main/res/layout/fragment_general_flora.xml" value="0.22" />
+        <entry key="..\:/Users/irisj/OneDrive/Documents/Java_android/projet fil rouge/assistales_git/rea2/app/src/main/res/layout/fragment_general_sheet_show.xml" value="0.1859375" />
+        <entry key="..\:/Users/irisj/OneDrive/Documents/Java_android/projet fil rouge/assistales_git/rea2/app/src/main/res/layout/fragment_home.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/irisj/OneDrive/Documents/Java_android/projet fil rouge/assistales_git/rea2/app/src/main/res/layout/fragment_sheet.xml" value="0.2" />
         <entry key="..\:/Users/irisj/OneDrive/Documents/Java_android/projet fil rouge/assistales_git/rea2/app/src/main/res/layout/row_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/irisj/OneDrive/Documents/Java_android/projet fil rouge/assistales_git/rea2/app/src/main/res/layout/row_sheet.xml" value="0.1" />
         <entry key="..\:/Users/irisj/OneDrive/Documents/Java_android/projet fil rouge/assistales_git/rea2/app/src/main/res/mipmap-anydpi-v26/ic_banner.xml" value="0.21614583333333334" />
       </map>
     </option>

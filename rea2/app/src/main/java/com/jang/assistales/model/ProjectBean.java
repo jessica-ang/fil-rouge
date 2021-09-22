@@ -1,12 +1,13 @@
 package com.jang.assistales.model;
 
-public class ProjectBean {
+public class ProjectBean extends SheetBean {
     private String name;
     private String description;
     private String storyline;
 
     //--------------------------Constructor---------------------------//
     public ProjectBean(String name) {
+        super(name);
         this.name = name;
     }
 

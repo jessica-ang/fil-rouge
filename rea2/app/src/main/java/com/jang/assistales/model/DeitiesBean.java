@@ -1,6 +1,6 @@
 package com.jang.assistales.model;
 
-public class DeitiesBean {
+public class DeitiesBean extends SheetBean {
     private String name;
     private String otherName;
     private String description;
@@ -25,6 +25,7 @@ public class DeitiesBean {
     //--------------------------Constructor---------------------------//
 
     public DeitiesBean(String name) {
+        super(name);
         this.name = name;
     }
 

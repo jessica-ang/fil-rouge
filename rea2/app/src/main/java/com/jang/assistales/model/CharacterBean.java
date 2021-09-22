@@ -1,6 +1,6 @@
 package com.jang.assistales.model;
 
-public class CharacterBean {
+public class CharacterBean extends SheetBean {
     private String name;
     private String firstname;
     private String nickname;
@@ -40,6 +40,7 @@ public class CharacterBean {
     //--------------------------Constructor---------------------------//
 
     public CharacterBean(String name, String firstname) {
+        super(name + " " + firstname);
         this.name = name;
         this.firstname = firstname;
     }

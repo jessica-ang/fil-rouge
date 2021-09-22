@@ -1,6 +1,6 @@
 package com.jang.assistales.model;
 
-public class FaunaBean {
+public class FaunaBean extends SheetBean {
     private String name;
     private String description;
     private String race;
@@ -25,6 +25,7 @@ public class FaunaBean {
     //--------------------------Constructor---------------------------//
 
     public FaunaBean(String name) {
+        super(name);
         this.name = name;
     }
 
