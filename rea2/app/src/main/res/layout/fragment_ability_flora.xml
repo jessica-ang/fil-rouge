@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#8C271E"
     android:orientation="vertical"
-    tools:context=".AbilityFloraFragment">
+    tools:context=".Fragment.AbilityFloraFragment">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

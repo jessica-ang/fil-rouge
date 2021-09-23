@@ -8,6 +8,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.tabs.TabLayout;
+import com.jang.assistales.Fragment.HomeFragment;
+import com.jang.assistales.Fragment.SheetFragment;
 import com.jang.assistales.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {

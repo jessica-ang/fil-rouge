@@ -1,4 +1,4 @@
-package com.jang.assistales;
+package com.jang.assistales.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.jang.assistales.FloraActivity;
+import com.jang.assistales.R;
+import com.jang.assistales.SheetAdapter;
 import com.jang.assistales.databinding.FragmentSheetBinding;
 import com.jang.assistales.model.CharacterBean;
 import com.jang.assistales.model.DeitiesBean;
