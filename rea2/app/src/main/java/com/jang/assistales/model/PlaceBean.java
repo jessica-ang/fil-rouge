@@ -1,6 +1,8 @@
 package com.jang.assistales.model;
 
-public class PlaceBean extends SheetBean {
+import java.io.Serializable;
+
+public class PlaceBean implements Serializable {
     private String name;
     private String description;
     private String gender;
@@ -16,7 +18,6 @@ public class PlaceBean extends SheetBean {
     //--------------------------Constructor---------------------------//
 
     public PlaceBean(String name) {
-        super(name);
         this.name = name;
     }
 

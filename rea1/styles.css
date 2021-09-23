@@ -18,10 +18,10 @@ header {
     display: grid;
     width: 100%;
     grid-template-columns: 0.4fr 4fr;
-    grid-template-rows: 0.5fr 0.8fr;
+    grid-template-rows: 0.5fr 1fr;
     border-bottom: #004e89 solid 2px;
     box-shadow: #004e89 0px 2px 2px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     z-index: 20;
 }
 header div {

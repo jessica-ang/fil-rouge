@@ -1,8 +1,9 @@
 package com.jang.assistales.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class FloraBean extends SheetBean {
+public class FloraBean implements Serializable {
     private String name;
     private String story;
     private String looks;
@@ -17,7 +18,6 @@ public class FloraBean extends SheetBean {
     //--------------------------Constructor---------------------------//
 
     public FloraBean(String name) {
-        super(name);
         this.name = name;
     }
 

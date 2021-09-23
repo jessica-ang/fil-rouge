@@ -1,13 +1,14 @@
 package com.jang.assistales.model;
 
-public class ProjectBean extends SheetBean {
+import java.io.Serializable;
+
+public class ProjectBean implements Serializable {
     private String name;
     private String description;
     private String storyline;
 
     //--------------------------Constructor---------------------------//
     public ProjectBean(String name) {
-        super(name);
         this.name = name;
     }
 

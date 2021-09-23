@@ -1,12 +1,13 @@
 package com.jang.assistales.model;
 
-public class UniversBean extends SheetBean {
+import java.io.Serializable;
+
+public class UniversBean implements Serializable {
     private String name;
 
     //--------------------------Constructor---------------------------//
 
     public UniversBean(String name) {
-        super(name);
         this.name = name;
     }
 
@@ -14,4 +15,11 @@ public class UniversBean extends SheetBean {
     //--------------------------Getter/Setter-------------------------//
 
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

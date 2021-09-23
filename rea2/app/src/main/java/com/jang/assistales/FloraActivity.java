@@ -9,7 +9,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.tabs.TabLayout;
 import com.jang.assistales.Fragment.AbilityFloraFragment;
-import com.jang.assistales.Fragment.GeneralSheetShowFragment;
+import com.jang.assistales.Fragment.GeneralFloraShowFragment;
 import com.jang.assistales.databinding.ActivityFloraBinding;
 import com.jang.assistales.model.FloraBean;
 
@@ -35,7 +35,7 @@ public class FloraActivity extends AppCompatActivity {
 
 
         // affichage fragment
-        fragment = new GeneralSheetShowFragment();
+        fragment = new GeneralFloraShowFragment();
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fl, fragment);
@@ -46,7 +46,7 @@ public class FloraActivity extends AppCompatActivity {
             public void onTabSelected(TabLayout.Tab tab) {
                 switch (tab.getPosition()) {
                     case 0:
-                        fragment = new GeneralSheetShowFragment();
+                        fragment = new GeneralFloraShowFragment();
                         break;
                     case 1:
                         fragment = new AbilityFloraFragment();

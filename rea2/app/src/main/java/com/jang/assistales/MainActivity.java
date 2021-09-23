@@ -41,28 +41,28 @@ public class MainActivity extends AppCompatActivity {
                         fragment = new HomeFragment();
                         break;
                     case 1:
-                        fragment = new SheetFragment(1);
+                        fragment = new SheetFragment(Common.TYPE_PROJECT);
                         break;
                     case 2:
-                        fragment = new SheetFragment(2);
+                        fragment = new SheetFragment(Common.TYPE_UNIVERS);
                         break;
                     case 3:
-                        fragment = new SheetFragment(3);
+                        fragment = new SheetFragment(Common.TYPE_CHARACTER);
                         break;
                     case 4:
-                        fragment = new SheetFragment(4);
+                        fragment = new SheetFragment(Common.TYPE_DEITIES);
                         break;
                     case 5:
-                        fragment = new SheetFragment(5);
+                        fragment = new SheetFragment(Common.TYPE_PLACE);
                         break;
                     case 6:
-                        fragment = new SheetFragment(6);
+                        fragment = new SheetFragment(Common.TYPE_FAUNA);
                         break;
                     case 7:
-                        fragment = new SheetFragment(7);
+                        fragment = new SheetFragment(Common.TYPE_FLORA);
                         break;
                     case 8:
-                        fragment = new SheetFragment(8);
+                        fragment = new SheetFragment(Common.TYPE_ITEM);
                         break;
 
 
