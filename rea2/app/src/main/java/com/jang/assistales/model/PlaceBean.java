@@ -15,6 +15,11 @@ public class PlaceBean implements Serializable {
     private String climate;
     private String landmark;
 
+    @Override
+    public String toString() {
+        return name;
+    }
+
     //--------------------------Constructor---------------------------//
 
     public PlaceBean(String name) {

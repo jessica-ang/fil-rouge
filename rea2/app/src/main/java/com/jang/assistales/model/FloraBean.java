@@ -14,6 +14,10 @@ public class FloraBean implements Serializable {
     private ArrayList<PlaceBean> lieux;
     private UniversBean univers;
 
+    @Override
+    public String toString() {
+        return name;
+    }
 
     //--------------------------Constructor---------------------------//
 

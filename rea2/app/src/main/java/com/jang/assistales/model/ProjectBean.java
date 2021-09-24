@@ -7,6 +7,11 @@ public class ProjectBean implements Serializable {
     private String description;
     private String storyline;
 
+    @Override
+    public String toString() {
+        return name;
+    }
+
     //--------------------------Constructor---------------------------//
     public ProjectBean(String name) {
         this.name = name;

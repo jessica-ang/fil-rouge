@@ -38,6 +38,10 @@ public class CharacterBean implements Serializable {
     private String particularity;
     private String other;
 
+    @Override
+    public String toString() {
+        return name + " " + firstname;
+    }
 
     //--------------------------Constructor---------------------------//
 
@@ -321,4 +325,6 @@ public class CharacterBean implements Serializable {
     public void setOther(String other) {
         this.other = other;
     }
+
+
 }

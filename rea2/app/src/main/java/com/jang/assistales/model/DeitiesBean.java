@@ -23,8 +23,12 @@ public class DeitiesBean implements Serializable {
     private String weight;
     private String particularity;
 
+    @Override
+    public String toString() {
+        return name;
+    }
 
-    //--------------------------Constructor---------------------------//
+//--------------------------Constructor---------------------------//
 
     public DeitiesBean(String name) {
         this.name = name;

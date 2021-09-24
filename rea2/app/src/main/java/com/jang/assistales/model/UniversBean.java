@@ -5,6 +5,11 @@ import java.io.Serializable;
 public class UniversBean implements Serializable {
     private String name;
 
+    @Override
+    public String toString() {
+        return name;
+    }
+
     //--------------------------Constructor---------------------------//
 
     public UniversBean(String name) {

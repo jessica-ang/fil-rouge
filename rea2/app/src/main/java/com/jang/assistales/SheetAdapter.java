@@ -16,7 +16,6 @@ import com.jang.assistales.model.FloraBean;
 import com.jang.assistales.model.ItemBean;
 import com.jang.assistales.model.PlaceBean;
 import com.jang.assistales.model.ProjectBean;
-import com.jang.assistales.model.SheetBean;
 import com.jang.assistales.model.UniversBean;
 
 import java.util.ArrayList;
@@ -25,21 +24,13 @@ public class SheetAdapter extends RecyclerView.Adapter<SheetAdapter.ViewHolder> 
 
     private int mType;
     private ArrayList<ProjectBean> projectBeans = Common.projectBeans;
-    private ProjectBean projectdata;
     private ArrayList<UniversBean> universBeans = Common.universBeans;
-    private UniversBean universdata;
     private ArrayList<CharacterBean> characterBeans = Common.characterBeans;
-    private CharacterBean characterdata;
     private ArrayList<DeitiesBean> deitiesBeans = Common.deitiesBeans;
-    private DeitiesBean deitiesdata;
     private ArrayList<PlaceBean> placeBeans = Common.placeBeans;
-    private PlaceBean placedata;
     private ArrayList<FaunaBean> faunaBeans = Common.faunaBeans;
-    private FaunaBean faunadata;
     private ArrayList<FloraBean> floraBeans = Common.floraBeans;
-    private FloraBean floradata;
     private ArrayList<ItemBean> itemBeans = Common.itemBeans;
-    private ItemBean itemdata;
     private LinearLayout root_sheet;
 
     public SheetAdapter(int pType) {
@@ -58,7 +49,7 @@ public class SheetAdapter extends RecyclerView.Adapter<SheetAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
         if (mType == 1) {
-            projectdata = projectBeans.get(position);
+            ProjectBean projectdata = projectBeans.get(position);
             holder.binding.tvNameSheet.setText(projectdata.getName());
             holder.binding.rootSheet.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -69,7 +60,7 @@ public class SheetAdapter extends RecyclerView.Adapter<SheetAdapter.ViewHolder> 
                 }
             });
         } else if (mType == 2) {
-            universdata = universBeans.get(position);
+            UniversBean universdata = universBeans.get(position);
             holder.binding.tvNameSheet.setText(universdata.getName());
             holder.binding.rootSheet.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -80,7 +71,7 @@ public class SheetAdapter extends RecyclerView.Adapter<SheetAdapter.ViewHolder> 
                 }
             });
         } else if (mType == 3) {
-            characterdata = characterBeans.get(position);
+            CharacterBean characterdata = characterBeans.get(position);
             holder.binding.tvNameSheet.setText(characterdata.getName() + " " + characterdata.getFirstname());
             holder.binding.rootSheet.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -91,7 +82,7 @@ public class SheetAdapter extends RecyclerView.Adapter<SheetAdapter.ViewHolder> 
                 }
             });
         } else if (mType == 4) {
-            deitiesdata = deitiesBeans.get(position);
+            DeitiesBean deitiesdata = deitiesBeans.get(position);
             holder.binding.tvNameSheet.setText(deitiesdata.getName());
             holder.binding.rootSheet.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -102,7 +93,7 @@ public class SheetAdapter extends RecyclerView.Adapter<SheetAdapter.ViewHolder> 
                 }
             });
         } else if (mType == 5) {
-            placedata = placeBeans.get(position);
+            PlaceBean placedata = placeBeans.get(position);
             holder.binding.tvNameSheet.setText(placedata.getName());
             holder.binding.rootSheet.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -113,7 +104,7 @@ public class SheetAdapter extends RecyclerView.Adapter<SheetAdapter.ViewHolder> 
                 }
             });
         } else if (mType == 6) {
-            faunadata = faunaBeans.get(position);
+            FaunaBean faunadata = faunaBeans.get(position);
             holder.binding.tvNameSheet.setText(faunadata.getName());
             holder.binding.rootSheet.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -124,7 +115,7 @@ public class SheetAdapter extends RecyclerView.Adapter<SheetAdapter.ViewHolder> 
                 }
             });
         } else if (mType == 7) {
-            floradata = floraBeans.get(position);
+            FloraBean floradata = floraBeans.get(position);
             holder.binding.tvNameSheet.setText(floradata.getName());
             holder.binding.rootSheet.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -135,7 +126,7 @@ public class SheetAdapter extends RecyclerView.Adapter<SheetAdapter.ViewHolder> 
                 }
             });
         } else if (mType == 8) {
-            itemdata = itemBeans.get(position);
+            ItemBean itemdata = itemBeans.get(position);
             holder.binding.tvNameSheet.setText(itemdata.getName());
             holder.binding.rootSheet.setOnClickListener(new View.OnClickListener() {
                 @Override

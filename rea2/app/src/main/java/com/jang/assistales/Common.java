@@ -21,15 +21,6 @@ public class Common {
     public static final ArrayList<ItemBean> itemBeans = new ArrayList<>();
     public static final ArrayList<PlaceBean> placeBeans = new ArrayList<>();
 
-    public static ProjectBean projectbean;
-    public static UniversBean universBean;
-    public static CharacterBean characterBean;
-    public static DeitiesBean deitiesBean;
-    public static FaunaBean faunaBean;
-    public static FloraBean floraBean;
-    public static ItemBean itemBean;
-    public static PlaceBean placeBean;
-
 
     public static final int TYPE_PROJECT = 1;
     public static final int TYPE_UNIVERS = 2;

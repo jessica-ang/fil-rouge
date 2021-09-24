@@ -17,6 +17,11 @@ public class ItemBean implements Serializable {
     private String capacity;
 
 
+    @Override
+    public String toString() {
+        return name;
+    }
+
     //--------------------------Constructor---------------------------//
 
     public ItemBean(String name) {

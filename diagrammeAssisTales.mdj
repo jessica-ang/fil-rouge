@@ -5740,8 +5740,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 135,
-									"top": 445,
+									"left": 121,
+									"top": 580,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -5761,8 +5761,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 147,
-									"top": 439,
+									"left": 115,
+									"top": 568,
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -5782,8 +5782,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 110,
-									"top": 458,
+									"left": 134,
+									"top": 604,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -5886,10 +5886,10 @@
 								"$ref": "AAAAAAF5wUgx7kpSIT4="
 							},
 							"tail": {
-								"$ref": "AAAAAAF5MorX3PeSSIg="
+								"$ref": "AAAAAAF6OMqtwTr70wE="
 							},
 							"lineStyle": 1,
-							"points": "108:440;192:552;255:552",
+							"points": "110:614;192:552;255:552",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF5wWZzIG+0dLs="
@@ -9106,7 +9106,7 @@
 									"$ref": "AAAAAAF5wWZzIG+vPf0="
 								},
 								"reference": {
-									"$ref": "AAAAAAF5MorX3PeQsrw="
+									"$ref": "AAAAAAF6OMqtwDr5QiU="
 								}
 							},
 							"end2": {
@@ -16844,9 +16844,9 @@
 												"$ref": "AAAAAAF5wiwi6iZAlio="
 											},
 											"font": "Arial;13;0",
-											"left": 32.72998046875,
+											"left": 30.55908203125,
 											"top": 13,
-											"width": 89.13720703125,
+											"width": 81.48828125,
 											"height": 13,
 											"text": "SD-creer projet"
 										},
@@ -16859,7 +16859,7 @@
 											"font": "Arial;13;1",
 											"left": 13,
 											"top": 13,
-											"width": 14.72998046875,
+											"width": 12.55908203125,
 											"height": 13,
 											"text": "sd"
 										}

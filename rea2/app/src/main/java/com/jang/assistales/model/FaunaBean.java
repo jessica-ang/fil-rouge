@@ -23,6 +23,10 @@ public class FaunaBean implements Serializable {
     private String color;
     private String particularity;
 
+    @Override
+    public String toString() {
+        return name;
+    }
 
     //--------------------------Constructor---------------------------//
 
