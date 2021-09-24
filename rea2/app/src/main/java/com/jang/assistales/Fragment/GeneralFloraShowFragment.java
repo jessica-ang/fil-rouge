@@ -15,7 +15,6 @@ import com.jang.assistales.model.FloraBean;
 
 public class GeneralFloraShowFragment extends Fragment {
 
-    private FragmentGeneralFloraShowBinding binding;
     private TextView tv_name;
     private TextView tv_story;
     private TextView tv_looks;
@@ -30,7 +29,6 @@ public class GeneralFloraShowFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = FragmentGeneralFloraShowBinding.inflate(getLayoutInflater());
 
 
     }

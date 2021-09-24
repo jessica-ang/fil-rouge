@@ -9,7 +9,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.tabs.TabLayout;
 import com.jang.assistales.Fragment.HomeFragment;
-import com.jang.assistales.Fragment.SheetFragment2;
+import com.jang.assistales.Fragment.SheetFragment;
 import com.jang.assistales.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,28 +41,28 @@ public class MainActivity extends AppCompatActivity {
                         fragment = new HomeFragment();
                         break;
                     case 1:
-                        fragment = new SheetFragment2(Common.TYPE_PROJECT);
+                        fragment = new SheetFragment(Common.TYPE_PROJECT);
                         break;
                     case 2:
-                        fragment = new SheetFragment2(Common.TYPE_UNIVERS);
+                        fragment = new SheetFragment(Common.TYPE_UNIVERS);
                         break;
                     case 3:
-                        fragment = new SheetFragment2(Common.TYPE_CHARACTER);
+                        fragment = new SheetFragment(Common.TYPE_CHARACTER);
                         break;
                     case 4:
-                        fragment = new SheetFragment2(Common.TYPE_DEITIES);
+                        fragment = new SheetFragment(Common.TYPE_DEITIES);
                         break;
                     case 5:
-                        fragment = new SheetFragment2(Common.TYPE_PLACE);
+                        fragment = new SheetFragment(Common.TYPE_PLACE);
                         break;
                     case 6:
-                        fragment = new SheetFragment2(Common.TYPE_FAUNA);
+                        fragment = new SheetFragment(Common.TYPE_FAUNA);
                         break;
                     case 7:
-                        fragment = new SheetFragment2(Common.TYPE_FLORA);
+                        fragment = new SheetFragment(Common.TYPE_FLORA);
                         break;
                     case 8:
-                        fragment = new SheetFragment2(Common.TYPE_ITEM);
+                        fragment = new SheetFragment(Common.TYPE_ITEM);
                         break;
 
 

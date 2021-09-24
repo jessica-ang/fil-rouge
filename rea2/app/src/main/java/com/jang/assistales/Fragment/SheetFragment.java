@@ -2,7 +2,6 @@ package com.jang.assistales.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,6 @@ import com.jang.assistales.Common;
 import com.jang.assistales.FloraActivity;
 import com.jang.assistales.R;
 import com.jang.assistales.SheetAdapter;
-import com.jang.assistales.databinding.FragmentSheetBinding;
 import com.jang.assistales.model.CharacterBean;
 import com.jang.assistales.model.DeitiesBean;
 import com.jang.assistales.model.FaunaBean;
@@ -25,35 +23,30 @@ import com.jang.assistales.model.PlaceBean;
 import com.jang.assistales.model.ProjectBean;
 import com.jang.assistales.model.UniversBean;
 
-import java.io.Serializable;
-
 
 public class SheetFragment extends Fragment implements SheetAdapter.OnSheetAdapterListener {
 
-    private FragmentSheetBinding binding;
     private RecyclerView recyclerView;
     private SheetAdapter adapter;
-    private int mType;
-
 
     public SheetFragment(int pType) {
-        mType = pType;
+
         if (pType == 1) {
-            adapter = new SheetAdapter(Common.TYPE_PROJECT);
+            adapter = new SheetAdapter(Common.projectBeans, this);
         } else if (pType == 2) {
-            adapter = new SheetAdapter(Common.TYPE_UNIVERS);
+            adapter = new SheetAdapter(Common.universBeans, this);
         } else if (pType == 3) {
-            adapter = new SheetAdapter(Common.TYPE_CHARACTER);
+            adapter = new SheetAdapter(Common.characterBeans, this);
         } else if (pType == 4) {
-            adapter = new SheetAdapter(Common.TYPE_DEITIES);
+            adapter = new SheetAdapter(Common.deitiesBeans, this);
         } else if (pType == 5) {
-            adapter = new SheetAdapter(Common.TYPE_PLACE);
+            adapter = new SheetAdapter(Common.placeBeans, this);
         } else if (pType == 6) {
-            adapter = new SheetAdapter(Common.TYPE_FAUNA);
+            adapter = new SheetAdapter(Common.faunaBeans, this);
         } else if (pType == 7) {
-            adapter = new SheetAdapter(Common.TYPE_FLORA);
+            adapter = new SheetAdapter(Common.floraBeans, this);
         } else if (pType == 8) {
-            adapter = new SheetAdapter(Common.TYPE_ITEM);
+            adapter = new SheetAdapter(Common.itemBeans, this);
         }
 
     }
@@ -62,11 +55,6 @@ public class SheetFragment extends Fragment implements SheetAdapter.OnSheetAdapt
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-        binding = FragmentSheetBinding.inflate(getLayoutInflater());
-
-
     }
 
     @Override
@@ -77,65 +65,31 @@ public class SheetFragment extends Fragment implements SheetAdapter.OnSheetAdapt
 
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new GridLayoutManager(view.getContext(), 1));
-        adapter.setRecepteur(this);
         return view;
     }
 
-    @Override
-    public void onProjectClic(ProjectBean projectdata) {
-        Intent intent = new Intent(getActivity(), FloraActivity.class);
-        //intent.putExtra("project", projectdata);
-        startActivity(intent);
-    }
 
     @Override
-    public void onUniversClic(UniversBean universdata) {
-        Intent intent = new Intent(getActivity(), FloraActivity.class);
-        //intent.putExtra("univers", universdata);
-        startActivity(intent);
+    public void onSheetAdapterClic(Object object) {
+        if (object instanceof FloraBean) {
+            FloraBean floraBean = (FloraBean) object;
+            Intent intent = new Intent(getActivity(), FloraActivity.class);
+            intent.putExtra("flora", floraBean);
+            startActivity(intent);
+        } else if (object instanceof CharacterBean) {
+            CharacterBean characterBean = (CharacterBean) object;
+        } else if (object instanceof PlaceBean) {
+            PlaceBean placeBean = (PlaceBean) object;
+        } else if (object instanceof ProjectBean) {
+            ProjectBean projectBean = (ProjectBean) object;
+        } else if (object instanceof UniversBean) {
+            UniversBean universBean = (UniversBean) object;
+        } else if (object instanceof DeitiesBean) {
+            DeitiesBean deitiesBean = (DeitiesBean) object;
+        } else if (object instanceof FaunaBean) {
+            FaunaBean faunaBean = (FaunaBean) object;
+        } else if (object instanceof ItemBean) {
+            ItemBean itemBean = (ItemBean) object;
+        }
     }
-
-    @Override
-    public void onCharacterClic(CharacterBean characterdata) {
-        Intent intent = new Intent(getActivity(), FloraActivity.class);
-        //intent.putExtra("character", characterdata);
-        startActivity(intent);
-    }
-
-    @Override
-    public void onDeitiesClic(DeitiesBean deitiesdata) {
-        Intent intent = new Intent(getActivity(), FloraActivity.class);
-        //intent.putExtra("deities", deitiesdata);
-        startActivity(intent);
-    }
-
-    @Override
-    public void onPlaceClic(PlaceBean placedata) {
-        Intent intent = new Intent(getActivity(), FloraActivity.class);
-        //intent.putExtra("place", placedata);
-        startActivity(intent);
-    }
-
-    @Override
-    public void onFaunaClic(FaunaBean faunadata) {
-        Intent intent = new Intent(getActivity(), FloraActivity.class);
-        //intent.putExtra("fauna", faunadata);
-        startActivity(intent);
-    }
-
-    @Override
-    public void onFloraClic(FloraBean floradata) {
-        Intent intent = new Intent(getActivity(), FloraActivity.class);
-        intent.putExtra("flora", floradata);
-        Log.w("TAG", "onFloraClic: " + floradata.toString());
-        startActivity(intent);
-    }
-
-    @Override
-    public void onItemClic(ItemBean itemdata) {
-        Intent intent = new Intent(getActivity(), FloraActivity.class);
-        //intent.putExtra("item", itemdata);
-        startActivity(intent);
-    }
-
 }

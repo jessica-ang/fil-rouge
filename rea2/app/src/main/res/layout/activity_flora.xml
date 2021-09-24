@@ -11,7 +11,7 @@
         android:id="@+id/tv_head"
         android:layout_width="match_parent"
         android:layout_height="74dp"
-        android:background="@mipmap/ic_banner_foreground"
+        android:background="@mipmap/ic_bannerflora_foreground"
         android:gravity="bottom|right"
         android:padding="6dp"
         android:shadowColor="#000000"

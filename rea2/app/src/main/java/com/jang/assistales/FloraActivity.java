@@ -8,7 +8,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.tabs.TabLayout;
-import com.jang.assistales.Fragment.AbilityFloraFragment;
+import com.jang.assistales.Fragment.AbilityFloraShowFragment;
 import com.jang.assistales.Fragment.GeneralFloraShowFragment;
 import com.jang.assistales.databinding.ActivityFloraBinding;
 import com.jang.assistales.model.FloraBean;
@@ -49,7 +49,7 @@ public class FloraActivity extends AppCompatActivity {
                         fragment = new GeneralFloraShowFragment();
                         break;
                     case 1:
-                        fragment = new AbilityFloraFragment();
+                        fragment = new AbilityFloraShowFragment();
                         break;
 
                 }
