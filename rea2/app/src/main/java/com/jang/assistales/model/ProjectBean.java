@@ -1,8 +1,15 @@
 package com.jang.assistales.model;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.io.Serializable;
 
+@Entity
 public class ProjectBean implements Serializable {
+    @PrimaryKey(autoGenerate = true)
+    private long id_project;
+
     private String name;
     private String description;
     private String storyline;

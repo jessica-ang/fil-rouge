@@ -1,8 +1,14 @@
 package com.jang.assistales.model;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.io.Serializable;
 
+@Entity
 public class CharacterBean implements Serializable {
+    @PrimaryKey
+    private long id_character;
     private String name;
     private String firstname;
     private String nickname;

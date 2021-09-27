@@ -1,8 +1,15 @@
 package com.jang.assistales.model;
 
+import androidx.room.Entity;
+import androidx.room.ForeignKey;
+import androidx.room.PrimaryKey;
+
 import java.io.Serializable;
 
+@Entity(foreignKeys = @ForeignKey(entity = UniversBean.class, parentColumns = "id_univers", childColumns = "universId"))
 public class PlaceBean implements Serializable {
+    @PrimaryKey(autoGenerate = true)
+    private long id_place;
     private String name;
     private String description;
     private String gender;
@@ -14,6 +21,8 @@ public class PlaceBean implements Serializable {
     private String location;
     private String climate;
     private String landmark;
+    private long universId;
+
 
     @Override
     public String toString() {

@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (tab.getPosition()) {
                     case 0:
                         fragment = new HomeFragment();
+                        binding.tvHead.setBackgroundResource(R.mipmap.ic_banner_foreground);
                         break;
                     case 1:
                         fragment = new SheetFragment(Common.TYPE_PROJECT);
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 7:
                         fragment = new SheetFragment(Common.TYPE_FLORA);
+                        binding.tvHead.setBackgroundResource(R.mipmap.ic_bannerflora_foreground);
                         break;
                     case 8:
                         fragment = new SheetFragment(Common.TYPE_ITEM);

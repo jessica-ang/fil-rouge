@@ -1,9 +1,16 @@
 package com.jang.assistales.model;
 
+import androidx.room.Entity;
+import androidx.room.ForeignKey;
+import androidx.room.PrimaryKey;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
+@Entity(foreignKeys = @ForeignKey(entity = UniversBean.class, parentColumns = "id_univers", childColumns = "universId"))
 public class FloraBean implements Serializable {
+    @PrimaryKey
+    private long id_flora;
     private String name;
     private String story;
     private String looks;
@@ -13,6 +20,7 @@ public class FloraBean implements Serializable {
     private String specific;
     private ArrayList<PlaceBean> lieux;
     private UniversBean univers;
+    private long universId;
 
     @Override
     public String toString() {

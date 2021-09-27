@@ -30,6 +30,7 @@ public class HomeFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         FloraBean sheetBean1 = new FloraBean("Tulipe");
         FloraBean sheetBean2 = new FloraBean("Rose");
         FloraBean sheetBean3 = new FloraBean("MArguerite");
