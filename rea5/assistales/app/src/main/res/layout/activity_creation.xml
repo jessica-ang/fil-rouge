@@ -19,6 +19,15 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp" />
 
+    <TextView
+        android:id="@+id/tv_crea_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/sand"
+        android:textSize="29dp" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

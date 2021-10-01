@@ -1,23 +1,18 @@
 package com.jang.assistales
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.tabs.TabLayout
-import com.jang.assistales.database.applicationInstance
 import com.jang.assistales.databinding.ActivityMainBinding
 import com.jang.assistales.fragment.HomeFragment
 import com.jang.assistales.fragment.SheetFragment
-import com.jang.assistales.model.ProjectBean
-import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
 
-    var binding: ActivityMainBinding? = null
+    lateinit var binding: ActivityMainBinding
     var fragment: Fragment? = null
     var fragmentManager: FragmentManager? = null
     var fragmentTransaction: FragmentTransaction? = null
@@ -25,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding!!.root)
+        setContentView(binding.root)
 
 
         // affichage fragment
@@ -35,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction!!.replace(R.id.fl_main, fragment!!)
         fragmentTransaction!!.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
         fragmentTransaction!!.commit()
-        binding!!.tlMain.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+        binding.tlMain.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
                 when (tab.position) {
                     0 -> {
@@ -87,10 +82,6 @@ class MainActivity : AppCompatActivity() {
             override fun onTabReselected(tab: TabLayout.Tab?) {}
         })
     }
-
-/*    fun onCreationClic() {
-        startActivity(Intent(this, CreationActivity::class.java))
-    }*/
 
 
 }
