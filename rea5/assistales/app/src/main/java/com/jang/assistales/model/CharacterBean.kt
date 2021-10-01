@@ -5,11 +5,11 @@ import androidx.room.*
 @Entity(
     tableName = "character"
 )
-class CharacterBean (
+class CharacterBean(
     val name: String,
+    val firstname: String,
     @PrimaryKey(autoGenerate = true)
     val id_character: Long = 0,
-    val firstname: String,
     val nickname: String? = null,
     val gender: String? = null,
     val age: String? = null,
