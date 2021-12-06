@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assistales">
         <activity
+            android:name=".showActivity"
+            android:exported="true" />
+        <activity
             android:name=".CreationActivity"
             android:exported="true" />
         <activity

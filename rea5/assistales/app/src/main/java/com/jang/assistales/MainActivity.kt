@@ -1,5 +1,6 @@
 package com.jang.assistales
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -39,28 +40,27 @@ class MainActivity : AppCompatActivity() {
                     }
                     1 -> {
                         fragment = SheetFragment(1)
-                        //binding!!.fabAdd.setOnClickListener { v: View? ->
-
-                        /*thread {
-                            applicationInstance.database.projectDao()
-                                .insert(ProjectBean("Toto"))
-                        }*/
-                        //}
+                        binding!!.tvHead.setBackgroundResource(R.mipmap.ic_banner_project_foreground)
                     }
                     2 -> {
                         fragment = SheetFragment(2)
+                        binding!!.tvHead.setBackgroundResource(R.mipmap.ic_banner_univers_foreground)
                     }
                     3 -> {
                         fragment = SheetFragment(3)
+                        binding!!.tvHead.setBackgroundResource(R.mipmap.ic_banner_character_foreground)
                     }
                     4 -> {
                         fragment = SheetFragment(4)
+                        binding!!.tvHead.setBackgroundResource(R.mipmap.ic_banner_deities_foreground)
                     }
                     5 -> {
                         fragment = SheetFragment(5)
+                        binding!!.tvHead.setBackgroundResource(R.mipmap.ic_banner_place_foreground)
                     }
                     6 -> {
                         fragment = SheetFragment(6)
+                        binding!!.tvHead.setBackgroundResource(R.mipmap.ic_banner_fauna_foreground)
                     }
                     7 -> {
                         fragment = SheetFragment(7)
@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity() {
                     }
                     8 -> {
                         fragment = SheetFragment(8)
+                        binding!!.tvHead.setBackgroundResource(R.mipmap.ic_banner_item_foreground)
                     }
                 }
                 val fm = supportFragmentManager
@@ -82,7 +83,6 @@ class MainActivity : AppCompatActivity() {
             override fun onTabReselected(tab: TabLayout.Tab?) {}
         })
     }
-
 
 }
 

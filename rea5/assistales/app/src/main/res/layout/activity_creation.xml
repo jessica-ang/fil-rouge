@@ -122,6 +122,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:backgroundTint="@color/design_default_color_error"
+                    android:onClick="onBtCancelClick"
                     android:text="Retour" />
             </LinearLayout>
         </LinearLayout>

@@ -111,9 +111,4 @@ class SheetFragment : Fragment, SheetAdapter.OnSheetAdapterListener {
         }
     }
 
-    /*    fun onCreationClic() {
-        startActivity(Intent(this, CreationActivity::class.java))
-    }*/
-
-
 }

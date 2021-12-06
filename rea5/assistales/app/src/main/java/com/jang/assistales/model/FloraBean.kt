@@ -5,11 +5,11 @@ import androidx.room.*
 
 @Entity(
     tableName = "flora",
-    foreignKeys = [ForeignKey(
+/*    foreignKeys = [ForeignKey(
         entity = UniversBean::class,
         parentColumns = ["id_univers"],
         childColumns = ["universId"]
-    )]
+    )]*/
 )
 class FloraBean(
     val name: String,
@@ -21,9 +21,9 @@ class FloraBean(
     val benefit: String? = null,
     val danger: String? = null,
     val specific: String? = null,
-    val universId: Long = 0,
+/*    val universId: Long = 0,*/
 
-    ) {
+) {
     override fun toString(): String {
         return name
     }

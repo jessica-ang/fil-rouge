@@ -97,7 +97,7 @@ header .mainNav {
       position: absolute;
       right: 0;
       display: flex;
-      justify-content: center;
+      justify-content: end;
       align-items: center;
     }
     header h1 {display: none;}
