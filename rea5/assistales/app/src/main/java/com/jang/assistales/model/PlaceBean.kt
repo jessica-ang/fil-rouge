@@ -45,6 +45,9 @@ class PlaceBean(
 
         @Delete
         fun delete(place: PlaceBean)
+
+        @Query("SELECT name FROM place ORDER BY name ASC")
+        fun getName(): List<String>
     }
 
 }

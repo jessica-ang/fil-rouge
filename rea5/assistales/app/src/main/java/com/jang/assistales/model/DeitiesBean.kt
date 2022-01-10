@@ -52,5 +52,8 @@ class DeitiesBean(
 
         @Delete
         fun delete(deities: DeitiesBean)
+
+        @Query("SELECT name FROM deities ORDER BY name ASC")
+        fun getName(): List<String>
     }
 }

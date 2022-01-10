@@ -1,6 +1,5 @@
 package com.jang.assistales.fragment
 
-import android.R.attr
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -16,8 +15,6 @@ import com.jang.assistales.SheetAdapter
 import com.jang.assistales.database.applicationInstance
 import com.jang.assistales.model.*
 import kotlin.concurrent.thread
-import android.R.attr.button
-import android.widget.Toast
 import com.jang.assistales.CreationActivity
 
 
@@ -91,8 +88,8 @@ class SheetFragment : Fragment, SheetAdapter.OnSheetAdapterListener {
     override fun onSheetAdapterClic(`object`: Any?) {
         if (`object` is FloraBean) {
             val floraBean: FloraBean? = `object` as FloraBean?
-            /*val intent = Intent(activity, FloraActivity::class.java)
-            intent.putExtra("flora", floraBean)
+            /*val intent = Intent(activity, ShowActivity::class.java)
+            intent.putExtra("Bean", floraBean)
             startActivity(intent)*/
         } else if (`object` is CharacterBean) {
             val characterBean: CharacterBean? = `object` as CharacterBean?

@@ -53,6 +53,9 @@ class FaunaBean(
 
         @Delete
         fun delete(fauna: FaunaBean)
+
+        @Query("SELECT name FROM faune ORDER BY name ASC")
+        fun getName(): List<String>
     }
 
 }

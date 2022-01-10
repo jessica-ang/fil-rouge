@@ -63,5 +63,11 @@ class CharacterBean(
 
         @Delete
         fun delete(character: CharacterBean)
+
+        @Query("SELECT name FROM character ORDER BY name ASC")
+        fun getName(): List<String>
+
+        @Query("SELECT firstname FROM character ORDER BY firstname ASC")
+        fun getFirstname(): List<String>
     }
 }

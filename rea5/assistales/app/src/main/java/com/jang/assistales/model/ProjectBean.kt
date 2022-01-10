@@ -5,7 +5,7 @@ import androidx.room.*
 @Entity(
     tableName = "project"
 )
-class ProjectBean (
+class ProjectBean(
     val name: String,
     @PrimaryKey(autoGenerate = true)
     val id_project: Long = 0,
@@ -31,5 +31,8 @@ class ProjectBean (
 
         @Delete
         fun delete(project: ProjectBean)
+
+        @Query("SELECT name FROM project ORDER BY name ASC")
+        fun getName(): List<String>
     }
 }

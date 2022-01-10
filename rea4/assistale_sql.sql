@@ -258,3 +258,9 @@ and posseder.id_personnage = personnages.id_personnage;
 
 alter table personnages
 add id_personnage_lier bigint;
+
+select univers.nom
+from univers
+inner join flores
+where univers.id_univers=flores.id_univers
+order by univers.nom asc;

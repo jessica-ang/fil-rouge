@@ -46,5 +46,8 @@ class ItemBean(
 
         @Delete
         fun delete(item: ItemBean)
+
+        @Query("SELECT name FROM item ORDER BY name ASC")
+        fun getName(): List<String>
     }
 }

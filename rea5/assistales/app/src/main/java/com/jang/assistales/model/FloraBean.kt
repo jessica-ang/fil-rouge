@@ -42,6 +42,9 @@ class FloraBean(
 
         @Delete
         fun delete(flora: FloraBean)
+
+        @Query("SELECT name FROM flora ORDER BY name ASC")
+        fun getName(): List<String>
     }
 
 

@@ -26,6 +26,9 @@ class UniversBean(
 
         @Delete
         fun delete(univers: UniversBean)
+
+        @Query("SELECT name FROM univers ORDER BY name ASC")
+        fun getName(): List<String>
     }
 
 }
